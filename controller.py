@@ -23,6 +23,8 @@ class PS4Controller(object):
         
         if not self.axis_data:
             self.axis_data = {}
+            for i in range(0,6):
+                self.axis_data[i] = 0.0
 
         if not self.button_data:
             self.button_data = {}
@@ -54,6 +56,8 @@ class PS4Controller(object):
     def pollEvents(self):
         if not self.axis_data:
             self.axis_data = {}
+            for i in range(0,6):
+                self.axis_data[i] = 0.0
 
         if not self.button_data:
             self.button_data = {}
