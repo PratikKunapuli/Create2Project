@@ -14,8 +14,8 @@ while(not exitButton):
     exitButton = joystick.getXButton()
     leftX = joystick.getLeftXAxis()
     leftY = joystick.getLeftYAxis()
-    rightX = joystick.getRightYAxis()
-    rightY = joystick.getRightXAxis()
+    rightX = joystick.getRightXAxis()
+    rightY = joystick.getRightYAxis()
 
     print('LeftX= {:f}'.format(leftX))
     print('LeftY= {:f}'.format(leftY))
