@@ -12,13 +12,19 @@ exitButton = False #X on the PS4 controller.
 while(not exitButton):
     joystick.pollEvents()
     exitButton = joystick.getXButton()
-    if(joystick.getLeftYAxis() > 0.2):
-        print("Up!")
-    else:
-        print("Nothing!")
+    leftX = joystick.getLeftX()
+    leftY = joystick.getLeftY()
+    rightX = joystick.getRightY()
+    rightY = joystick.getRightX()
+
+    print 'LeftX: %d' % (leftX)
+    print 'LeftY: %d' % (leftY)
+    print 'RightX: %d' % (rightX)
+    print 'RightY: %d' % (rightY)
+
 
     os.system('clear')
-    print("I got here!")
+    #print("I got here!")
 
 #bot.start()
 #bot.safe()
