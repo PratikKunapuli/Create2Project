@@ -17,10 +17,10 @@ while(not exitButton):
     rightX = joystick.getRightY()
     rightY = joystick.getRightX()
 
-    print 'LeftX: %f' % (leftX)
-    print 'LeftY: %f' % (leftY)
-    print 'RightX: %f' % (rightX)
-    print 'RightY: %f' % (rightY)
+    print "LeftX: %f" % (leftX)
+    print "LeftY: %f" % (leftY)
+    print "RightX: %f" % (rightX)
+    print "RightY: %f" % (rightY)
 
 
     os.system('clear')
