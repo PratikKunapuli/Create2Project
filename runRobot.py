@@ -19,8 +19,8 @@ while(not exitButton):
 
     print('LeftX= {:f}'.format(leftX))
     print('LeftY= {:f}'.format(leftY))
-    print('RightX= {:f}'.format(leftX))
-    print('RightY= {:f}'.format(leftY))
+    print('RightX= {:f}'.format(rightX))
+    print('RightY= {:f}'.format(rightY))
 
 
     os.system('clear')
