@@ -12,10 +12,10 @@ exitButton = False #X on the PS4 controller.
 while(not exitButton):
     joystick.pollEvents()
     exitButton = joystick.getXButton()
-    leftX = joystick.getLeftX()
-    leftY = joystick.getLeftY()
-    rightX = joystick.getRightY()
-    rightY = joystick.getRightX()
+    leftX = joystick.getLeftXAxis()
+    leftY = joystick.getLeftYAxis()
+    rightX = joystick.getRightYAxis()
+    rightY = joystick.getRightXAxis()
 
     print('LeftX= {:f}'.format(leftX))
     print('LeftY= {:f}'.format(leftY))
