@@ -12,7 +12,7 @@ class PS4Controller(object):
 
     def init(self):
         """Initialize the joystick components"""
-        
+        os.environ["SDL_VIDEODRIVER"] = "dummy"
         pygame.init()
         pygame.joystick.init()
         self.controller = pygame.joystick.Joystick(0)
