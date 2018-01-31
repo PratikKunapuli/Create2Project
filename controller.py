@@ -76,6 +76,7 @@ class PS4Controller(object):
                     self.hat_data[event.hat] = event.value
 
     def getLeftYAxis(self):
+        self.pollEvents()
         return self.axis_data[1]
 
     def getLeftXAxis(self):
@@ -88,6 +89,7 @@ class PS4Controller(object):
         return self.axis_data[2]
 
     def getXButton(self):
+        self.pollEvents()
         return self.button_data[1]
 
     def getSquareButton(self):
