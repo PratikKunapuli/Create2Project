@@ -87,7 +87,7 @@ class PS4Controller(object):
         return self.axis_data[0]
 
     def getRightYAxis(self):
-        return self.axis_data[3]
+        return self.axis_data[5]
 
     def getRightXAxis(self):
         return self.axis_data[2]
@@ -106,10 +106,10 @@ class PS4Controller(object):
         return self.button_data[2]
 
     def getLeftTrigger(self):
-        return self.axis_data[4]
+        return self.axis_data[3]
 
     def getRightTrigger(self):
-        return self.axis_data[5]
+        return self.axis_data[4]
 
 
 
