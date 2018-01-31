@@ -6,7 +6,7 @@ import controller
 #bot = create2api.Create2()
 joystick = controller.PS4Controller()
 joystick.init()
-joystick.listen()
+#joystick.listen()
 
 exitButton = False #X on the PS4 controller.
 while(not exitButton):
